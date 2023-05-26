@@ -118,9 +118,9 @@ const LoginPage = () => {
               <div className="text-[1.4rem] text-[#1F1B38] font-[500]">
                 Password <span className="text-[#f53838]">*</span>
               </div>
-              <div className="border-[0.1rem] border-[#F0EFF2] border-solid rounded-[0.5rem] w-full flex items-center justify-between p-[1.5rem]">
+              <div className="border-[0.1rem] border-[#F0EFF2] border-solid rounded-[0.5rem] w-full flex items-center justify-between">
                 <input
-                  className="text-[1.4rem]"
+                  className="text-[1.4rem] p-[1.5rem] w-[90%]"
                   placeholder="Enter password"
                   autoComplete="off"
                   type={passwordShow ? "text" : "password"}
@@ -131,12 +131,12 @@ const LoginPage = () => {
                 />
                 {passwordShow ? (
                   <AiOutlineEye
-                    className="text-[#A7A5AF] text-[2rem] cursor-pointer"
+                    className="text-[#A7A5AF] text-[2rem] cursor-pointer mr-[1.5rem] flex-1"
                     onClick={togglePassword}
                   />
                 ) : (
                   <AiOutlineEyeInvisible
-                    className="text-[#A7A5AF] text-[2rem] cursor-pointer"
+                    className="text-[#A7A5AF] text-[2rem] cursor-pointer mr-[1.5rem] flex-1"
                     onClick={togglePassword}
                   />
                 )}
